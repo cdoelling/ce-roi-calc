@@ -7,6 +7,7 @@ $(document).ready(function() {
   var modelsCircle;
   var eventsCircle;
   var bulkCircle;
+  var transformationCircle;
   var normalizationCircle;
   var testingCircle;
 
