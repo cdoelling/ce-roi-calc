@@ -374,7 +374,7 @@ var completeElementData = [{
     name: 'QuickBooks Online',
     key: 'quickbooks',
     hub: 'finance',
-    apiType: '.NET'
+    apiType: 'REST'
   },
   {
     name: 'Sage One',
@@ -759,5 +759,5 @@ var completeElementData = [{
 var length = completeElementData.length;
 
 for (var i = 0; i < length; i++){
-  
+
 }
