@@ -65,6 +65,14 @@ input.form-control, .hs-form input[type='text'], .hs-form input[type='email'] {
   border-color: white;
 }
 
+.ce-logo-main {
+  width: 160px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 100px;
+
+}
+
 #get-started {
    /* use for transitioning */
    width: 100%;
