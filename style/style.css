@@ -26,6 +26,16 @@ body {
 
 }
 
+.quote-main {
+  padding: 20px;
+  background: rgba(214,214,214,.4);
+  border-radius: 5px;
+  max-width: 700px;
+  margin-top: 70px;
+  margin-left: auto;
+  margin-right:auto;
+}
+
 footer {
   background-color: transparent;
   height: 100px;
@@ -65,10 +75,22 @@ input.form-control, .hs-form input[type='text'], .hs-form input[type='email'] {
   border-color: white;
 }
 
+.ce-logo-main {
+  width: 160px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+
+}
+
 #get-started {
    /* use for transitioning */
    width: 100%;
    display:none;
+}
+
+#get-started-form {
+  padding-top: 60px;
 }
 
 #data-selection {
