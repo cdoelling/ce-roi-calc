@@ -37,6 +37,10 @@ body {
 
 }
 
+table {
+  z-index: 100;
+}
+
 footer {
   background-color: transparent;
   height: 100px;
@@ -426,7 +430,7 @@ h1.ce-market {
 .breakdown {
   font-size: 1rem;
   opacity: 0;
-  margin-top: 15px;
+  margin-top: 50px;
 }
 
 @keyframes fadeinout {
@@ -484,6 +488,8 @@ h1.ce-market {
   }
 }
 
+
+
 .results {
   background-image: url("../images/white-hex-bg-lg-light.png");
   -webkit-background-size: cover;
@@ -493,6 +499,7 @@ h1.ce-market {
   background-position: center center;
   display: none;
   padding-bottom: 20px;
+
 }
 
 .circle {

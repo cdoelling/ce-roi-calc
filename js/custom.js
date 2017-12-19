@@ -1325,6 +1325,7 @@ $(document).ready(function() {
     $(".circle").each(function() {
       $(this).empty();
     });
+    
 
     $(".results").show(function() {
 
