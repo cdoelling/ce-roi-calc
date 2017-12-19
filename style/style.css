@@ -31,9 +31,14 @@ body {
   background: rgba(214,214,214,.4);
   border-radius: 5px;
   max-width: 700px;
-  margin-top: 70px;
+  margin-top: 50px;
   margin-left: auto;
   margin-right:auto;
+
+}
+
+table {
+  z-index: 100;
 }
 
 footer {
@@ -79,7 +84,6 @@ input.form-control, .hs-form input[type='text'], .hs-form input[type='email'] {
   width: 160px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 30px;
 
 }
 
@@ -87,6 +91,7 @@ input.form-control, .hs-form input[type='text'], .hs-form input[type='email'] {
    /* use for transitioning */
    width: 100%;
    display:none;
+   margin-top: -20px;
 }
 
 #get-started-form {
@@ -425,7 +430,7 @@ h1.ce-market {
 .breakdown {
   font-size: 1rem;
   opacity: 0;
-  margin-top: 15px;
+  margin-top: 50px;
 }
 
 @keyframes fadeinout {
@@ -483,6 +488,8 @@ h1.ce-market {
   }
 }
 
+
+
 .results {
   background-image: url("../images/white-hex-bg-lg-light.png");
   -webkit-background-size: cover;
@@ -492,6 +499,7 @@ h1.ce-market {
   background-position: center center;
   display: none;
   padding-bottom: 20px;
+
 }
 
 .circle {
