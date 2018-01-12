@@ -7,14 +7,25 @@
 
 
 body {
-
   color: white;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
+h1 {
+  font-size: 60px;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 1.2;
+}
 .main-content {
-  background-color: #4d82bf;
-  background-image: url("../images/ce_home_a.jpg");
+  background: linear-gradient(17deg,#40b4e5,#5691c6 100%);
+  /* background-color: #4d82bf;
+  background-image: url("../images/ce_home_a.jpg"); */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -23,6 +34,8 @@ body {
   height: 100vh;
   width: 100vw;
   overflow: hidden;
+
+
 
 }
 
@@ -39,6 +52,12 @@ body {
 
 table {
   z-index: 100;
+}
+
+.table-center {
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
 }
 
 footer {
