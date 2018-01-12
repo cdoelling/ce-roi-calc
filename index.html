@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   <!-- Bootstrap CSS Theme -->
@@ -30,13 +30,16 @@
 
 
 
+
+
   <div class="first-page">
 
     <div class="main-content">
 
 
+      <div class="landing">
 
-      <!-- <div class="ce-logo-main"><img src="images/ce_full_wht.png" alt="" height="120"></div> -->
+      <div class="ce-logo-main"><img src="images/ce_full_wht.png" alt="" height="120"></div>
 
       <div class="d-flex justify-content-center align-items-center">
       <!-- add class align-items-center again -->
@@ -44,7 +47,6 @@
 
         <h1>Calculate Your Integration ROI</h1>
         <h3>Take your integrations to market faster</h3>
-        <br/>
 
         <!--[if lte IE 8]>
 <script charset="utf-8" type="text/javascript" src="https://js.hsforms.net/forms/v2-legacy.js"></script>
@@ -65,22 +67,33 @@
         <form id="get-started-form">
           <div class="d-flex">
             <div class="form-inline container-fluid text-center">
-              <div class="center form-group">
-                <input type="text" required class="form-control mb-2 mr-sm-2 mb-sm-0" name="user-name" id="user-name" placeholder="Your Name" />
-                <input type="email" required class="form-control mb-2 mr-sm-2 mb-sm-0" name="user-email" id="user-email" placeholder="Company Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" oninvalid="setCustomValidity('Opps, we need a valid email address to send your results')" onchange="try{setCustomValidity('')}catch(e){}"
-                />
-              </div>
+            <div class="center form-group">
+              <input type="text" required class="form-control mb-2 mr-sm-2 mb-sm-0" name="user-name" id="user-name" placeholder="Your Name" />
+              <input type="email" required class="form-control mb-2 mr-sm-2 mb-sm-0" name="user-email" id="user-email" placeholder="Company Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" oninvalid="setCustomValidity('Opps, we need a valid email address to send your results')" onchange="try{setCustomValidity('')}catch(e){}"/>
+            </div>
             </div>
           </div>
           <input type="submit" class="btn btn-default" value="Get Started" id="get-started-submit" />
           <div class="secret-box"></div>
         </form>
 
-        <div class="quote-main">
-          <h5>"Building out integrations in-house requires a lot of resources. Know this before you try." <br/><br/> - Eric Prugh, Co-Founder and COO at PactSafe</h5>
-        </div>
+
+
+
+
+              <div class="quote-main">
+
+                <h5>"Building out integrations in-house requires a lot of resources. Know this before you try."</h5> <br/><h6>- Eric Prugh, Co-Founder and COO at PactSafe</h6>
+
+              </div>
+
+
 
       </div>
+
+    </div>
+
+
     </div>
 
 
@@ -168,7 +181,7 @@
           <button class="btn btn-default btn-go-back">Add / Remove APIs</button>
         </div>
         <h1 class="text-center time-to-market">Time to Market</h1>
-        <table>
+         <table class="table-center">
           <tr>
             <td>
               <h3 class="text-center diy-market">Build it Yourself:</h3>
@@ -348,6 +361,7 @@
   <!-- End of HubSpot Embed Code -->
   <!-- Custom JS -->
   <script defer src="js/custom.js"></script>
+  <script defer src="js/particles.js"></script>
 </body>
 
 </html>
