@@ -248,6 +248,12 @@ $(document).ready(function() {
       apiType: '.NET'
     },
     {
+      name: 'Microsoft Dynamics CRM On-Prem',
+      key: 'dynamicscrmonprem',
+      hub: 'crm',
+      apiType: '.NET'
+    },
+    {
       name: 'Base',
       key: 'base',
       hub: 'crm',
@@ -1325,7 +1331,7 @@ $(document).ready(function() {
     $(".circle").each(function() {
       $(this).empty();
     });
-    
+
 
     $(".results").show(function() {
 
