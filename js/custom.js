@@ -245,13 +245,13 @@ $(document).ready(function() {
       name: 'Microsoft Dynamics CRM',
       key: 'dynamicscrmadfs',
       hub: 'crm',
-      apiType: '.NET'
+      apiType: 'Other'
     },
     {
       name: 'Microsoft Dynamics CRM On-Prem',
       key: 'dynamicscrmonprem',
       hub: 'crm',
-      apiType: '.NET'
+      apiType: 'ONPREM'
     },
     {
       name: 'Base',
@@ -925,7 +925,7 @@ $(document).ready(function() {
       "bulkTransformation": 104,
       "normalization": 80,
       "testing": 40,
-      "totalDays": 70
+      "totalDays": 64
     },
 
     "SOAP": {
@@ -952,6 +952,19 @@ $(document).ready(function() {
       "normalization": 80,
       "testing": 80,
       "totalDays": 92
+    },
+
+    "ONPREM": {
+      "research": 40,
+      "setup": 80,
+      "auth": 64,
+      "mvp": 120,
+      "models": 80,
+      "events": 104,
+      "bulkTransformation": 104,
+      "normalization": 80,
+      "testing": 80,
+      "totalDays": 102
     }
 
   };
@@ -1285,6 +1298,7 @@ $(document).ready(function() {
     var countREST = 0;
     var countSOAP = 0;
     var countOther = 0;
+    var countONPREM = 0;
     for (var i = 0; i < numOfElements; i++) {
       thisKey = keysForCalculation[i];
       var typeArr = $.grep(elementData, function(e, u) {
@@ -1295,12 +1309,16 @@ $(document).ready(function() {
         countREST++;
       } else if (type == "SOAP") {
         countSOAP++;
+      } else if (type == "ONPREM") {
+        countONPREM++;
+      } else if (type == "Other") {
+        countOther++;
       } else {
         countOther++;
       }
     }
-    var countSOAPAndOther = countSOAP + countOther;
-    var diyBuildDays = (countREST * newBuildInfo["REST"].totalDays) + (countSOAP * newBuildInfo["SOAP"].totalDays) + (countOther * newBuildInfo["Other"].totalDays);
+    var countSOAPAndOther = countSOAP + countOther + countONPREM;
+    var diyBuildDays = (countREST * newBuildInfo["REST"].totalDays) + (countSOAP * newBuildInfo["SOAP"].totalDays) + (countOther * newBuildInfo["Other"].totalDays) + (countONPREM * newBuildInfo["ONPREM"].totalDays);
 
     var researchDays = ((countREST * newBuildInfo["REST"].research) + (countSOAPAndOther * newBuildInfo["SOAP"].research)) / 8;
     var setupDays = ((countREST * newBuildInfo["REST"].setup) + (countSOAPAndOther * newBuildInfo["SOAP"].setup)) / 8;
@@ -1312,7 +1330,7 @@ $(document).ready(function() {
     var normalizationDays = ((countREST * newBuildInfo["REST"].normalization) + (countSOAPAndOther * newBuildInfo["SOAP"].normalization)) / 8;
     var testingDays = ((countREST * newBuildInfo["REST"].testing) + (countSOAPAndOther * newBuildInfo["SOAP"].testing)) / 8;
 
-    var cloudElementsBuildDays = 30 + ((countREST + countSOAP + countOther - 1) * 7);
+    var cloudElementsBuildDays = 30 + ((countREST + countSOAP + countOther +countONPREM - 1) * 7);
 
     researchIsAnimated = false;
     setupIsAnimated = false;
@@ -1853,6 +1871,12 @@ $(document).ready(function() {
       $(".soap-apis").css("opacity", 0);
       $("#countSOAP").html("0");
 
+      $(".other-apis").css("opacity", 0);
+      $("#countOther").html("0");
+
+      $(".onprem-apis").css("opacity", 0);
+      $("#countONPREM").html("0");
+
       $(".total-apis").css("opacity", 0);
       $("#countTotal").html("0");
 
@@ -1884,7 +1908,21 @@ $(document).ready(function() {
             "opacity": 1
           }, 500);
           setTimeout(function() {
-            $("#countSOAP").countUpTo((countSOAP + countOther), 500);
+            $("#countSOAP").countUpTo(countSOAP, 500);
+          }, 400);
+
+          $(".onprem-apis").animate({
+            "opacity": 1
+          }, 500);
+          setTimeout(function() {
+            $("#countONPREM").countUpTo(countONPREM, 500);
+          }, 400);
+
+          $(".other-apis").animate({
+            "opacity": 1
+          }, 500);
+          setTimeout(function() {
+            $("#countOther").countUpTo(countOther, 500);
           }, 400);
 
           setTimeout(function() {
@@ -1893,7 +1931,7 @@ $(document).ready(function() {
             }, 500);
           }, 900);
           setTimeout(function() {
-            $("#countTotal").countUpTo((countREST + countSOAP + countOther), 500);
+            $("#countTotal").countUpTo((countREST + countSOAP + countOther + countONPREM), 500);
           }, 1000);
 
           setTimeout(function() {
