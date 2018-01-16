@@ -1332,6 +1332,12 @@ $(document).ready(function() {
 
     var cloudElementsBuildDays = 30 + ((countREST + countSOAP + countOther +countONPREM - 1) * 7);
 
+    var diyCost = diyBuildDays * 462;
+
+    var diyMaintenance = diyCost * .25;
+
+    var cePrice = (countREST * 11980);
+
     researchIsAnimated = false;
     setupIsAnimated = false;
     authIsAnimated = false;
@@ -1348,6 +1354,10 @@ $(document).ready(function() {
 
     $(".circle").each(function() {
       $(this).empty();
+    });
+
+    $(".ce-logo-main").hide(function (){
+      $(this).css("display", hidden);
     });
 
 
@@ -1888,6 +1898,7 @@ $(document).ready(function() {
 
       $(".ce-market").css("opacity", 0);
       $("#cloudElementsBuildDays").html("0");
+      $("#diyCost").html("0");
 
       $(".breakdown").css("opacity", 0);
 
@@ -1960,6 +1971,34 @@ $(document).ready(function() {
           setTimeout(function() {
             $("#cloudElementsBuildDays").countUpTo(cloudElementsBuildDays, 1000);
           }, 4700);
+
+          setTimeout(function() {
+            $(".ce-market").animate({
+              "opacity": 1
+            }, 500);
+          }, 4600);
+          setTimeout(function() {
+            $("#diyCost").countUpTo(diyCost, 1000);
+          }, 4700);
+
+          setTimeout(function() {
+            $(".ce-market").animate({
+              "opacity": 1
+            }, 500);
+          }, 4600);
+          setTimeout(function() {
+            $("#diyMaintenance").countUpTo(diyMaintenance, 1000);
+          }, 4700);
+
+          setTimeout(function() {
+            $(".ce-market").animate({
+              "opacity": 1
+            }, 500);
+          }, 4600);
+          setTimeout(function() {
+            $("#cePrice").countUpTo(cePrice, 1000);
+          }, 4700);
+
 
           setTimeout(function() {
             $(".breakdown").animate({
