@@ -182,6 +182,13 @@ $(document).ready(function() {
       apiType: 'REST'
     },
     {
+      name: 'SAP Business One',
+      key: 'sapb1',
+      hub: 'erp',
+      apiType: 'Other',
+      tier: 'Enterprise'
+    },
+    {
       name: 'Autotask CRM',
       key: 'autotaskcrm',
       hub: 'crm',
