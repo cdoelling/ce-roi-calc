@@ -9,6 +9,7 @@
 body {
   color: white;
   font-family: 'Source Sans Pro', sans-serif;
+  background: #40b4e5;
 }
 
 h1 {
@@ -18,7 +19,7 @@ h1 {
 }
 
 h3 {
-  font-size: 30px;
+  font-size: 1.3rem;
   font-weight: 300;
   line-height: 1.2;
 }
@@ -26,17 +27,17 @@ h3 {
 
 
 .main-content {
-  background: linear-gradient(17deg,#40b4e5,#5691c6 100%);
-  /* background-color: #4d82bf;
-  background-image: url("../images/ce_home_a.jpg"); */
+  background: linear-gradient(0deg,#40b4e5,#5691c6 100%);
+  background-color: #5691c6;
+  /* background-image: url("../images/ce_home_a.jpg"); */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-position: center center;
-  height: 100vh;
+  height: 100vH;
   width: 100vw;
-  overflow: hidden;
+  /* overflow: hidden; */
 
 }
 
@@ -277,7 +278,7 @@ input.form-control, .hs-form input[type='text'], .hs-form input[type='email'] {
 
 #calculated-roi {
   display: none;
-  margin-top: 50px;
+  margin-top: 0px;
 }
 
 #loader {
@@ -404,6 +405,22 @@ input.form-control, .hs-form input[type='text'], .hs-form input[type='email'] {
   font-size: 1.3rem;
 }
 
+.other-apis {
+  opacity: 0;
+}
+
+.other-apis h3 {
+  font-size: 1.3rem;
+}
+
+.onprem-apis {
+  opacity: 0;
+}
+
+.onprem-apis h3 {
+  font-size: 1.3rem;
+}
+
 hr.total-apis {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -490,6 +507,13 @@ h1.ce-market {
     font-size: 1.6rem;
   }
 
+  .other-apis h3 {
+    font-size: 1.6rem;
+  }
+  .onprem-apis h3 {
+    font-size: 1.6rem;
+  }
+
   .total-apis h3 {
     font-size: 1.6rem;
   }
@@ -526,6 +550,7 @@ h1.ce-market {
   background-position: center center;
   display: none;
   padding-bottom: 20px;
+  margin-top: 250px;
 
 }
 
@@ -553,7 +578,7 @@ svg {
 
 .day-box {
   width: 100vw;
-  padding: 50px 10px 0px 50px;
+  padding: 40px 10px 0px 50px;
   opacity:0;
 }
 
