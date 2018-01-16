@@ -474,7 +474,7 @@ h1.ce-market {
 .breakdown {
   font-size: 1rem;
   opacity: 0;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 @keyframes fadeinout {
@@ -488,6 +488,7 @@ h1.ce-market {
   animation-name: fadeinout;
   animation-duration: 2s;
   animation-iteration-count: infinite;
+  margin-bottom: 50px;
 }
 
 @media screen and (min-width: 575px) {
