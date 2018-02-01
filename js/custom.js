@@ -131,770 +131,898 @@ $(document).ready(function() {
       name: 'Slack',
       key: 'slack',
       hub: 'collaboration',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'Cisco Spark',
       key: 'ciscospark',
       hub: 'collaboration',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'GoToWebinar',
       key: 'gotowebinar',
       hub: 'conferencing',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'ReadyTalk Illuminate ',
       key: 'readytalkilluminate',
       hub: 'conferencing',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'ConnectWise CRM',
       key: 'connectwisecrm',
       hub: 'crm',
-      apiType: 'SOAP'
+      apiType: 'SOAP',
+      tier: 'advanced'
     },
     {
       name: 'Pipedrive',
       key: 'pipedrive',
       hub: 'crm',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'Netsuite CRM 2016 Release 1',
       key: 'netsuitecrmv2',
       hub: 'crm',
-      apiType: 'SOAP'
+      apiType: 'SOAP',
+      tier: 'advanced'
     },
     {
       name: 'SugarCRM',
       key: 'sugarcrmv2',
       hub: 'crm',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'SAP C4C CRM',
       key: 'sapc4ccrm',
       hub: 'crm',
-      apiType: 'REST'
+      apiType: 'Other',
+      tier: 'enterprise'
     },
     {
       name: 'SAP Business One',
       key: 'sapb1',
       hub: 'erp',
       apiType: 'Other',
-      tier: 'Enterprise'
+      tier: 'enterprise'
     },
     {
       name: 'Autotask CRM',
       key: 'autotaskcrm',
       hub: 'crm',
-      apiType: 'SOAP'
+      apiType: 'SOAP',
+      tier: 'advanced'
     },
     {
       name: 'Zoho CRM',
       key: 'zohocrm',
       hub: 'crm',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'Act! Premium',
       key: 'actpremiumcrm',
       hub: 'crm',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'Connectwise CRM REST Beta',
       key: 'connectwisecrmrest',
       hub: 'crm',
-      apiType: 'REST'
+      apiType: 'SOAP',
+      tier: 'advanced'
     },
     {
       name: 'Bullhorn',
       key: 'bullhorn',
       hub: 'crm',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'Act! Essentials',
       key: 'actessentialsoauth',
       hub: 'crm',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'HubSpot CRM',
       key: 'hubspotcrm',
       hub: 'crm',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'Sage CRM',
       key: 'sagecrm',
       hub: 'crm',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'Infusionsoft CRM',
       key: 'infusionsoftcrm',
       hub: 'crm',
-      apiType: 'REST'
+      apiType: 'XML',
+      tier: 'advanced'
     },
     {
       name: 'Close.io',
       key: 'closeio',
       hub: 'crm',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'Microsoft Dynamics CRM',
       key: 'dynamicscrmadfs',
       hub: 'crm',
-      apiType: 'Other'
+      apiType: 'Other',
+      tier: 'advanced'
     },
     {
       name: 'Microsoft Dynamics CRM On-Prem',
       key: 'dynamicscrmonprem',
       hub: 'crm',
-      apiType: 'ONPREM'
+      apiType: 'ONPREM',
+      tier: 'advanced'
     },
     {
       name: 'Base',
       key: 'base',
       hub: 'crm',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'Salesforce',
       key: 'sfdc',
       hub: 'crm',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'GoodData',
       key: 'gooddata',
       hub: 'db',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'PostgreSQL',
       key: 'postgresql',
       hub: 'db',
-      apiType: 'REST'
+      apiType: 'Other',
+      tier: 'advanced'
     },
     {
       name: 'QuickBase',
       key: 'quickbase',
       hub: 'db',
-      apiType: 'REST'
+      apiType: 'XML',
+      tier: 'advanced'
     },
     {
       name: 'Microsoft SQL Server',
       key: 'sqlserver',
       hub: 'db',
-      apiType: 'Other'
+      apiType: 'Other',
+      tier: 'advanced'
     },
     {
       name: 'MySQL',
       key: 'mysql',
       hub: 'db',
-      apiType: 'REST'
+      apiType: 'Other',
+      tier: 'advanced'
     },
     {
       name: 'Salesforce Libraries',
       key: 'sfdclibraries',
       hub: 'documents',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'Google Drive',
       key: 'googledrive',
       hub: 'documents',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'Amazon S3',
       key: 'amazons3',
       hub: 'documents',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'Citrix ShareFile',
       key: 'sharefile',
       hub: 'documents',
-      apiType: 'SOAP'
+      apiType: 'SOAP',
+      tier: 'advanced'
     },
     {
       name: 'Dropbox Business',
       key: 'dropboxbusiness',
       hub: 'documents',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'Dropbox',
       key: 'dropbox',
       hub: 'documents',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'OneDrive',
       key: 'onedrivev2',
       hub: 'documents',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'Box',
       key: 'box',
       hub: 'documents',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'OneDrive for Business',
       key: 'onedrivebusiness',
       hub: 'documents',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'Sharepoint',
       key: 'sharepoint',
       hub: 'documents',
-      apiType: '.NET'
+      apiType: 'SOAP',
+      tier: 'advanced'
     },
     {
       name: 'Salesforce Files',
       key: 'sfdcdocuments',
       hub: 'documents',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'Evernote',
       key: 'evernote',
       hub: 'documents',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'OneNote',
       key: 'onenote',
       hub: 'documents',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'BigCommerce',
       key: 'bigcommerce',
       hub: 'ecommerce',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'Shopify',
       key: 'shopify',
       hub: 'ecommerce',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'SAP Anywhere',
       key: 'sapanywhere',
       hub: 'ecommerce',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'Weebly',
       key: 'weebly',
       hub: 'ecommerce',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'Volusion',
       key: 'volusion',
       hub: 'ecommerce',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'WooCommerce REST',
       key: 'woocommercerest',
       hub: 'ecommerce',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'Etsy',
       key: 'etsy',
       hub: 'ecommerce',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'Magento SOAP v1.9',
       key: 'magentosoapv19',
       hub: 'ecommerce',
-      apiType: 'SOAP'
+      apiType: 'SOAP',
+      tier: 'advanced'
     },
     {
       name: 'ePages',
       key: 'epages',
       hub: 'ecommerce',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'Magento v2.0',
       key: 'magentov20',
       hub: 'ecommerce',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'Infusion Soft ECommerce',
       key: 'infusionsoftecommerce',
       hub: 'ecommerce',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'WooCommerce',
       key: 'woocommerce',
       hub: 'ecommerce',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'Ecwid',
       key: 'ecwid',
       hub: 'ecommerce',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'Magento',
       key: 'magento',
       hub: 'ecommerce',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'Netsuite ERP',
       key: 'netsuiteerpv2',
       hub: 'erp',
-      apiType: 'SOAP'
+      apiType: 'SOAP',
+      tier: 'advanced'
     },
     {
       name: 'Adobe Sign',
       key: 'adobe-esign',
       hub: 'esignature',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'DocuSign',
       key: 'docusign',
       hub: 'esignature',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'EventMobi v1',
       key: 'eventmobiv1',
       hub: 'event-conferencing',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'Concur',
       key: 'concur',
       hub: 'expense',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'Taxify',
       key: 'taxify',
       hub: 'finance',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'Netsuite Finance',
       key: 'netsuitefinancev2',
       hub: 'finance',
-      apiType: 'REST'
+      apiType: 'SOAP',
+      tier: 'advanced'
     },
     {
       name: 'Xero',
       key: 'xero',
       hub: 'finance',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'advanced'
     },
     {
       name: 'QuickBooks Online',
       key: 'quickbooks',
       hub: 'finance',
-      apiType: '.NET'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'Sage One',
       key: 'sageone',
       hub: 'finance',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'Freshbooks',
       key: 'freshbooks',
       hub: 'finance',
-      apiType: 'REST'
+      apiType: 'XML',
+      tier: 'advanced'
     },
     {
       name: 'Great Plains',
       key: 'greatplains',
       hub: 'finance',
-      apiType: 'SOAP'
+      apiType: 'SOAP',
+      tier: 'advanced'
     },
     {
-      name: 'Intacct.',
+      name: 'Intacct',
       key: 'intacct',
       hub: 'finance',
-      apiType: 'REST'
+      apiType: 'XML',
+      tier: 'advanced'
     },
     {
       name: 'QuickBooks Enterprise',
       key: 'quickbooksonprem',
       hub: 'finance',
-      apiType: '.NET'
+      apiType: 'ONPREM',
+      tier: 'advanced'
     },
     {
       name: 'FieldAware v2',
       key: 'fieldawarev2',
       hub: 'fsa',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'ServiceMax',
       key: 'servicemax',
       hub: 'fsa',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'FieldLocate',
       key: 'fieldlocate',
       hub: 'fsa',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'Google Sheets',
       key: 'googlesheets',
       hub: 'general',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'typeform',
       key: 'typeform',
       hub: 'general',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'Brandfolder',
       key: 'brandfolder',
       hub: 'general',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'Wufoo',
       key: 'wufoo',
       hub: 'general',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'Act! Premium',
       key: 'actpremium',
       hub: 'general',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'ServiceNow',
       key: 'servicenow',
       hub: 'helpdesk',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'advanced'
     },
     {
       name: 'SAP C4C Helpdesk',
       key: 'sapc4chd',
       hub: 'helpdesk',
-      apiType: 'REST'
+      apiType: 'ODATA',
+      tier: 'enterprise'
+
     },
     {
       name: 'Zendesk',
       key: 'zendesk',
       hub: 'helpdesk',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'Desk.com',
       key: 'desk',
       hub: 'helpdesk',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'Wrike',
       key: 'wrike',
       hub: 'helpdesk',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'ServiceNow OAuth',
       key: 'servicenowoauth',
       hub: 'helpdesk',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'Autotask Helpdesk',
       key: 'autotaskhelpdesk',
       hub: 'helpdesk',
-      apiType: 'SOAP'
+      apiType: 'SOAP',
+      tier: 'advanced'
     },
     {
       name: 'Help Scout',
       key: 'helpscout',
       hub: 'helpdesk',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'JIRA',
       key: 'jira',
       hub: 'helpdesk',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'Freshdesk V2',
       key: 'freshdeskv2',
       hub: 'helpdesk',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'ConnectWise',
       key: 'connectwisehd',
       hub: 'helpdesk',
-      apiType: 'SOAP'
+      apiType: 'SOAP',
+      tier: 'advanced'
     },
     {
       name: 'Oracle Service Cloud',
       key: 'servicecloud',
       hub: 'helpdesk',
-      apiType: 'SOAP'
+      apiType: 'SOAP',
+      tier: 'advanced'
     },
     {
       name: 'Freshservice',
       key: 'freshservice',
       hub: 'helpdesk',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'Salesforce Service Cloud',
       key: 'sfdcservicecloud',
       hub: 'helpdesk',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'SuccessFactors Beta',
       key: 'successfactors',
       hub: 'humancapital',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'Netsuite HC',
       key: 'netsuitehcv2',
       hub: 'humancapital',
-      apiType: 'SOAP'
+      apiType: 'SOAP',
+      tier: 'advanced'
     },
     {
       name: 'BrightTALK',
       key: 'brighttalk',
       hub: 'marketing',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'Hubspot Marketing',
       key: 'hubspot',
       hub: 'marketing',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'Infusionsoft Marketing',
       key: 'infusionsoftmarketing',
       hub: 'marketing',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'Facebook Lead Ads',
       key: 'facebookleadads',
       hub: 'marketing',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'AutoPilot',
       key: 'autopilot',
       hub: 'marketing',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'Salesforce Marketing Cloud',
       key: 'salesforcemarketingcloud',
       hub: 'marketing',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'Kissmetrics',
       key: 'kissmetrics',
       hub: 'marketing',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'MailChimp v3.0',
       key: 'mailchimpv3',
       hub: 'marketing',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'Marketo',
       key: 'marketo',
       hub: 'marketing',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'Act-On',
       key: 'acton',
       hub: 'marketing',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'Sailthru',
       key: 'sailthru',
       hub: 'marketing',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'Pardot',
       key: 'pardot',
       hub: 'marketing',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'allbound',
       key: 'allbound',
       hub: 'marketing',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'Eloqua',
       key: 'eloqua',
       hub: 'marketing',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'MailJet Marketing',
       key: 'mailjetmarketing',
       hub: 'marketing',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'Twilio',
       key: 'twiliov2',
       hub: 'messaging',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'Twilio SMS',
       key: 'twilio',
       hub: 'messaging',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'SendGrid',
       key: 'sendgrid',
       hub: 'messaging',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'Infobip',
       key: 'infobip',
       hub: 'messaging',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'MailJet',
       key: 'mailjet',
       hub: 'messaging',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'Nimsoft',
       key: 'nimsoft',
       hub: 'monitoring',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'ABBYY',
       key: 'abbyy',
       hub: 'ocr',
-      apiType: 'REST'
+      apiType: 'XML',
+      tier: 'advanced'
     },
     {
       name: 'Chargebee',
       key: 'chargebee',
       hub: 'payment',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'Stripe',
       key: 'stripe',
       hub: 'payment',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'Expensify',
       key: 'expensify',
       hub: 'payment',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'Paypal v2',
       key: 'paypalv2',
       hub: 'payment',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'Zuora v2',
       key: 'zuorav2',
       hub: 'payment',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'Chargify',
       key: 'chargify',
       hub: 'payment',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'HireRight',
       key: 'hireright',
       hub: 'screening',
-      apiType: 'SOAP'
+      apiType: 'SOAP',
+      tier: 'advanced'
     },
     {
       name: 'Facebook',
       key: 'facebooksocial',
       hub: 'social',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'Lithium Response',
       key: 'lithiumlsw',
       hub: 'social',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'Instagram',
       key: 'instagram',
       hub: 'social',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'flickr',
       key: 'flickr',
       hub: 'social',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     },
     {
       name: 'Twitter',
       key: 'twitter',
       hub: 'social',
-      apiType: 'REST'
+      apiType: 'REST',
+      tier: 'standard'
     }
   ];
 
@@ -1363,9 +1491,9 @@ $(document).ready(function() {
       $(this).empty();
     });
 
-    $(".ce-logo-main").hide(function (){
-      $(this).css("display", hidden);
-    });
+    // $(".ce-logo-main").hide(function (){
+    //   $(this).css("display", hidden);
+    // });
 
 
     $(".results").show(function() {
