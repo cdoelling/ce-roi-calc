@@ -1491,9 +1491,9 @@ $(document).ready(function() {
       $(this).empty();
     });
 
-    $(".ce-logo-main").hide(function (){
-      $(this).css("display", hidden);
-    });
+    // $(".ce-logo-main").hide(function (){
+    //   $(this).css("display", hidden);
+    // });
 
 
     $(".results").show(function() {
