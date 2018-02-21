@@ -467,13 +467,14 @@ $(document).ready(function() {
       name: 'Fortnox',
       key: 'fortnox',
       hub: 'finance',
-      apiType: 'Other',
+      apiType: 'REST',
       tier: 'advanced'
-    },{
+    },
+    {
       name: 'E-conomic',
       key: 'economic',
       hub: 'finance',
-      apiType: 'Other',
+      apiType: 'REST',
       tier: 'advanced'
     },
     {
