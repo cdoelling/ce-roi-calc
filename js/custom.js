@@ -464,6 +464,19 @@ $(document).ready(function() {
       tier: 'standard'
     },
     {
+      name: 'Fortnox',
+      key: 'fortnox',
+      hub: 'finance',
+      apiType: 'Other',
+      tier: 'advanced'
+    },{
+      name: 'E-conomic',
+      key: 'economic',
+      hub: 'finance',
+      apiType: 'Other',
+      tier: 'advanced'
+    },
+    {
       name: 'Etsy',
       key: 'etsy',
       hub: 'ecommerce',
